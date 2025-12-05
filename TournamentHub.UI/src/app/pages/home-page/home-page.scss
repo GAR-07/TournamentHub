@@ -1,0 +1,54 @@
+.content-container {
+  justify-content: space-evenly;
+  
+  .content-block {
+    max-width: 800px;
+    margin: 20px 10px;
+
+    .slogan {
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 1.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 100%;
+    }
+
+    .title {
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 50px;
+      width: 100%;
+    }
+
+    p {
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 100%;
+    }
+
+    .btn {
+      margin: auto;
+      width: 75%;
+      height: 50px;
+      border-radius: 15px;
+      margin: 25px auto;
+    }
+
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

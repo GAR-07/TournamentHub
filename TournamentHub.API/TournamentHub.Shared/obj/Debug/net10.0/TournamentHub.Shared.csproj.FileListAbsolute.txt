@@ -1,0 +1,12 @@
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\bin\Debug\net10.0\TournamentHub.Shared.deps.json
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\bin\Debug\net10.0\TournamentHub.Shared.dll
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\bin\Debug\net10.0\TournamentHub.Shared.pdb
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\TournamentHub.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\TournamentHub.Shared.AssemblyInfoInputs.cache
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\TournamentHub.Shared.AssemblyInfo.cs
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\TournamentHub.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\TournamentHub.Shared.sourcelink.json
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\TournamentHub.Shared.dll
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\refint\TournamentHub.Shared.dll
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\TournamentHub.Shared.pdb
+C:\Users\Александр\source\repos\TournamentHub\TournamentHub.API\TournamentHub.Shared\obj\Debug\net10.0\ref\TournamentHub.Shared.dll

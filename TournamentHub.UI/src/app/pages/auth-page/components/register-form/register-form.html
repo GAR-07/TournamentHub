@@ -1,0 +1,41 @@
+<div class="content-wrapper">
+  <div class="content-container">
+    <h1>Регистрация</h1>
+    <form [formGroup]="regForm" (ngSubmit)="onSubmit()" class="custom-form">
+  
+      <div class="form-group">
+        <div class="custom-input">
+          <input type="text" class="form-control" formControlName="userName" placeholder="Имя">
+        </div>
+        <app-validator-message [field]="regForm.get('userName')"></app-validator-message>
+      </div>
+  
+      <div class="form-group">
+        <div class="custom-input">
+          <input type="text" class="form-control" formControlName="email" placeholder="Электронная почта">
+        </div>
+        <app-validator-message [field]="regForm.get('email')"></app-validator-message>
+      </div>
+  
+      <div [formGroup]="passwordsGroup">
+
+        <div class="form-group">
+          <div class="custom-input">
+            <input type="password" class="form-control" formControlName="password" placeholder="Пароль">
+          </div>
+          <app-validator-message [field]="regForm.get('passwords.password')"></app-validator-message>
+        </div>
+  
+        <div class="form-group">
+          <div class="custom-input">
+          <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Повторите пароль">
+          </div>
+          <app-validator-message [field]="regForm.get('passwords')"></app-validator-message>
+        </div>
+        
+      </div>
+  
+      <button type="submit" class="btn primary">Зарегистрироваться</button>
+      <a class="link" (click)="goToLogin()">Уже есть аккаунт?</a>
+    </form>
+  </div>

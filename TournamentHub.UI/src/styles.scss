@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/reset.scss";
+@import "./assets/styles/normalize.scss";
+@import "./assets/styles/colors.scss";
+@import "./assets/styles/custom.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Roboto:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: var(--font-color);
+  background: var(--bg-color-main);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-direction: column;
+  min-height: 1px;
+}
+
+.col-4 {
+  flex-direction: column;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  width: 100%;
+  min-height: 1px;
+}
+
+.col-6 {
+  flex-direction: column;
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 100%;
+  min-height: 1px;
+}
+
+.col-8 {
+  flex-direction: column;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  width: 100%;
+  min-height: 1px;
+}
+
+.col-12 {
+  flex-direction: column;
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+  min-height: 1px;
+}

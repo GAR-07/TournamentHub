@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "..\\TournamentHub.Tests\\TournamentHub.Tests.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TournamentHub.API\\TournamentHub.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

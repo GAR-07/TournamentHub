@@ -1,6 +1,0 @@
-@TournamentHub.API_HostAddress = http://localhost:5027
-
-GET {{TournamentHub.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

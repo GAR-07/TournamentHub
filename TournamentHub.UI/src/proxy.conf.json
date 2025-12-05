@@ -1,0 +1,9 @@
+{
+  "/devApi": {
+    "target": "https://localhost:44300",
+    "secure": false,
+    "pathRewrite": {
+      "^/devApi": ""
+    }
+  }
+}

@@ -1,0 +1,64 @@
+# .NET API
+
+# Build output
+TournamentHub.API/bin/
+TournamentHub.API/obj/
+
+# User-specific files
+TournamentHub.API/*.user
+TournamentHub.API/*.suo
+TournamentHub.API/*.cache
+TournamentHub.API/*.log
+TournamentHub.API/.vs/
+
+# App settings
+TournamentHub.API/TournamentHub.API/TournamentHub.API/appsettings.Development.json
+TournamentHub.API/TournamentHub.API/TournamentHub.API/appsettings.Local.json
+TournamentHub.API/TournamentHub.API/TournamentHub.API/appsettings.*.json
+!TournamentHub.API/TournamentHub.API/TournamentHub.API/appsettings.json
+
+# Angular / Node (UI)
+
+# Compiled output
+TournamentHub.UI/dist/
+TournamentHub.UI/tmp/
+TournamentHub.UI/out-tsc/
+TournamentHub.UI/bazel-out/
+
+# Node modules
+TournamentHub.UI/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular cache
+TournamentHub.UI/.angular/cache/
+TournamentHub.UI/typings/
+
+# Miscellaneous
+TournamentHub.UI/.sass-cache/
+TournamentHub.UI/.connect.lock
+TournamentHub.UI/coverage/
+TournamentHub.UI/libpeerconnection.log
+TournamentHub.UI/__screenshots__/
+TournamentHub.UI/testem.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# System files
+.DS_Store
+Thumbs.db

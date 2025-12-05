@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="../TournamentHub.Application/TournamentHub.Application.csproj" />
+  <Project Path="../TournamentHub.Domain/TournamentHub.Domain.csproj" />
+  <Project Path="../TournamentHub.Infrastructure/TournamentHub.Infrastructure.csproj">
+    <BuildDependency Project="../TournamentHub.Persistence/TournamentHub.Persistence.csproj" />
+  </Project>
+  <Project Path="../TournamentHub.Persistence/TournamentHub.Persistence.csproj">
+    <BuildDependency Project="../TournamentHub.Application/TournamentHub.Application.csproj" />
+  </Project>
+  <Project Path="../TournamentHub.Tests/TournamentHub.Tests.csproj" />
+  <Project Path="TournamentHub.API/TournamentHub.API.csproj" />
+</Solution>

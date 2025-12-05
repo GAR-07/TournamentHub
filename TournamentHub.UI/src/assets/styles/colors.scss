@@ -1,0 +1,43 @@
+:root {
+    --white: #ffffff;
+    --grey90: #e6e6e6;
+    --grey75: #bfbfbf;
+    --grey50: #808080;
+    --grey23: #3b3b3b;
+    --grey20: #323232;
+    --grey13: #202020;
+    --black: #000000;
+    --red: #e94040;
+    --yellow: #dcdf27;
+    --green: #00FF57;
+    --ligth-blue: #5fb2f2;
+    --blue: #4479a5;
+    --dark-blue: #002359;
+    
+    --font-color-white: #fefefe;
+    --font-color-tint: #c5c5c5;
+    --font-color-grey: #5a5a5a;
+    --font-color: #000000E0;
+
+    --bg-color-white: #fefefe;
+    --bg-color-main: #fff4e8;
+    --bg-color-additional: #c5ebcb;
+  
+    --primary-color: #195042;
+    --primary-transparent: #19504290;
+    --primary-gradient: linear-gradient(to right, #195042, #1d3937);
+    --additional-color: #91855a;
+    --additional-transparent: #91855a90;
+    --shadow-color: #00000080;
+    --error-color: #E13A2D;
+}
+
+/*
+em - от текущего шрифта
+% - от родительской ширины
+rem - от стиля html
+vw – 1% ширины окна
+vh – 1% высоты окна
+vmin – наименьшее из (vw, vh), в IE9 обозначается vm
+vmax – наибольшее из (vw, vh)
+*/

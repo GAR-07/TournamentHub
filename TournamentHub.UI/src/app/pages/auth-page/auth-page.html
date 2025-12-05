@@ -1,0 +1,11 @@
+<div class="auth-container">
+  @if (mode === 'register') {
+    <app-register-form 
+      (switchMode)="switchMode($event)">
+    </app-register-form>
+  } @else if (mode === 'login') {
+    <app-login-form 
+      (switchMode)="switchMode($event)">
+    </app-login-form>
+  }
+</div>
