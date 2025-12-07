@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TournamentHub.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5127b0be632b42db06a5621b67e17ad2e11df392")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cf8dba494e416360ee2a34ef0940548682f9e22")]
 [assembly: System.Reflection.AssemblyProductAttribute("TournamentHub.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TournamentHub.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

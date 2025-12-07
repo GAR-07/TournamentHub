@@ -1,5 +1,5 @@
-﻿using TournamentHub.Domain.Entities;
-using TournamentHub.Shared.DTO;
+﻿using TournamentHub.Application.DTO;
+using TournamentHub.Domain.Entities;
 
 namespace TournamentHub.Application.Interfaces
 {
@@ -7,5 +7,6 @@ namespace TournamentHub.Application.Interfaces
     {
         Task<Account> RegisterAsync(AccountRequestRegister request, CancellationToken ct);
         Task<Account> LoginAsync(AccountRequestLogin request, CancellationToken ct);
+        Task ChangePasswordAsync(Guid accountId, ChangePasswordRequest request, CancellationToken ct);
     }
 }

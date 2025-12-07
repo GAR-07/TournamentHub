@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "TournamentHub.API.Controllers.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "Auth/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TournamentHub.Application.DTO.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TournamentHub.API.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "Auth/login",
     "HttpMethod": "POST",
@@ -9,7 +25,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "TournamentHub.Shared.DTO.AccountRequestLogin",
+        "Type": "TournamentHub.Application.DTO.AccountRequestLogin",
         "IsRequired": true
       }
     ],
@@ -25,7 +41,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "TournamentHub.Shared.DTO.AccountRequestRegister",
+        "Type": "TournamentHub.Application.DTO.AccountRequestRegister",
         "IsRequired": true
       }
     ],

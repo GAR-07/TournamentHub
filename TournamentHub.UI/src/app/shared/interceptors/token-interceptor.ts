@@ -24,7 +24,6 @@ export const tokenInterceptor: HttpInterceptorFn = (req, next) => {
     });
   }
 
-  // Обработка ошибок сервера (например, 401)
   return next(updatedReq).pipe(
     tap({
       error: (error: any) => {

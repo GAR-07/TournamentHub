@@ -3,6 +3,8 @@ import { AbstractControl, FormBuilder, FormGroup, ReactiveFormsModule, Validatio
 import { ValidatorMessage } from '../../../../shared/components/validator-message/validator-message';
 import { AuthService } from '../../../../shared/services/auth-service';
 import { RegisterRequest } from '../../../../shared/models/auth/register-request.model';
+import { NotificationService } from '../../../../shared/services/notification-service';
+import { NotificationMessage } from '../../../../shared/models/notification-Мessage.model';
 
 @Component({
   selector: 'app-register-form',
@@ -18,7 +20,8 @@ export class RegisterForm {
 
   constructor(
     private authService: AuthService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private notificationService: NotificationService
   ) { 
     this.regForm = this.formBuilder.group({
       email: [null, [
@@ -43,7 +46,7 @@ export class RegisterForm {
           Validators.minLength(12),
           Validators.maxLength(255),
         ]],
-      }, { validators: this.passwordsAreEqual() })
+      }, { validators: this.passwordMatchValidator })
     });
     this.passwordsGroup = this.regForm.get('passwords') as FormGroup;
   }
@@ -51,24 +54,22 @@ export class RegisterForm {
   onSubmit() {
     this.regForm.markAllAsTouched();
 
+    if (!this.regForm.valid) return;
+
     const registerData: RegisterRequest = {
           userName: this.regForm.value.userName,
           email: this.regForm.value.email,
           password: this.regForm.value.passwords.password
         };
     
-    if (this.regForm.valid) {
-      this.authService.register(registerData).subscribe({
-        next: (response) => {
-          console.log(response);
-          console.log("Успешная регистрация!");
-        },
-        error: (response) => {
-          console.log(response);
-          console.log("Провал регистрации!");
-        }
-      });
-    }
+    this.authService.register(registerData).subscribe({
+      next: () => {
+        this.notificationService.addMessage(new NotificationMessage('Вы успешно зарегистрировались'));
+      },
+      error: (response) => {
+        this.notificationService.addMessage(new NotificationMessage(response.error, response.status));
+      }
+    });
   }
 
   goToLogin() {
@@ -76,16 +77,16 @@ export class RegisterForm {
   }
 
   private userNameValidator(): ValidatorFn {
-    const pattern = /[^a-zA-ZА-Яа-яЁё_]/;
+    const pattern = /[^a-zA-ZА-Яа-яЁё0-9_]/;
     return (control: AbstractControl): { [key: string]: any } | null => {
       if (!(control.dirty || control.touched)) {
         return null;
       }
-      return pattern.test(control.value) ? { custom: 'Поле может содержать только буквы и нижнее подчёркивание' } : null;
+      return pattern.test(control.value) ? { custom: 'Поле может содержать содержать только буквы, цифры и _' } : null;
     };
   }
 
-  private passwordsAreEqual(): ValidatorFn {
+  private passwordMatchValidator(): ValidatorFn {
     return (control: AbstractControl): ValidationErrors | null => {
       const group = control as FormGroup;
       const password = group.get('password')?.value;

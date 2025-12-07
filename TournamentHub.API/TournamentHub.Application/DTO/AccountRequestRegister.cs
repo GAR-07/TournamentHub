@@ -1,4 +1,4 @@
-﻿namespace TournamentHub.Shared.DTO
+﻿namespace TournamentHub.Application.DTO
 {
     public class AccountRequestRegister
     {

@@ -26,20 +26,18 @@ namespace TournamentHub.Persistence.Repositories
             return _dbContext.Accounts.AnyAsync(x => x.Email == email, ct);
         }
 
-        public async Task<Account> GetByIdAsync(Guid id, CancellationToken ct)
+        public async Task<Account?> GetByIdAsync(Guid id, CancellationToken ct)
         {
             return await _dbContext.Accounts
                 .Include(x => x.Role)
-                .FirstOrDefaultAsync(x => x.Id == id, ct)
-                ?? throw new Exception($"Ничего не найдено");
+                .FirstOrDefaultAsync(x => x.Id == id, ct);
         }
 
-        public async Task<Account> GetByEmailAsync(string email, CancellationToken ct)
+        public async Task<Account?> GetByEmailAsync(string email, CancellationToken ct)
         {
             return await _dbContext.Accounts
                 .Include(x => x.Role)
-                .FirstOrDefaultAsync(x => x.Email == email, ct)
-                ?? throw new Exception($"Ничего не найдено");
+                .FirstOrDefaultAsync(x => x.Email == email, ct);
         }
     }
 }

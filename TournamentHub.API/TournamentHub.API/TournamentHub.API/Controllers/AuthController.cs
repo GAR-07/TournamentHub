@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Threading;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using TournamentHub.Application.DTO;
 using TournamentHub.Application.Interfaces;
-using TournamentHub.Application.Services;
-using TournamentHub.Shared.DTO;
 
 namespace TournamentHub.API.Controllers
 {
@@ -49,6 +49,18 @@ namespace TournamentHub.API.Controllers
             };
 
             return Ok(response);
+        }
+
+        [Authorize]
+        [HttpPost("ChangePassword")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest request, CancellationToken ct)
+        {
+            var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!Guid.TryParse(userIdStr, out var userId))
+                return Unauthorized();
+
+            await _authService.ChangePasswordAsync(userId, request, ct);
+            return Ok();
         }
     }
 }

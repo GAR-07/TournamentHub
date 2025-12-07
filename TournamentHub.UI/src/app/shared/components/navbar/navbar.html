@@ -21,7 +21,7 @@
         <ul class="navbar-nav">
           @if (!auth.isAuthenticated()) {
             <li class="nav-item">
-              <a class="nav-link" routerLink="/auth">Вход</a>
+              <a class="nav-link" routerLink="/auth">Войти</a>
             </li>
           } @else {
             <li class="nav-item">
@@ -73,15 +73,18 @@
                 </li>
               </ul>
               <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" routerLink="/auth">Вход</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" routerLink="/cabinet" >Кабинет</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" (click)="logout()">Выход</a>
-                </li>
+                @if (!auth.isAuthenticated()) {
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/auth">Войти</a>
+                  </li>
+                } @else {
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/cabinet">Кабинет</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" (click)="logout()">Выход</a>
+                  </li>
+                }
               </ul>
             </div>
           </div>

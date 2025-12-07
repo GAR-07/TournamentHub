@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { ValidatorMessage } from '../../../../shared/components/validator-message/validator-message';
 import { AuthService } from '../../../../shared/services/auth-service';
 import { LoginRequest } from '../../../../shared/models/auth/login-request.model';
+import { NotificationService } from '../../../../shared/services/notification-service';
+import { NotificationMessage } from '../../../../shared/models/notification-Мessage.model';
 
 @Component({
   selector: 'app-login-form',
@@ -17,9 +19,10 @@ export class LoginForm {
 
   constructor(
     private authService: AuthService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private notificationService: NotificationService
   ) {
-    this.loginForm= this.formBuilder.group({
+    this.loginForm = this.formBuilder.group({
       login: [null, [
         Validators.required,
         Validators.maxLength(255)
@@ -31,26 +34,31 @@ export class LoginForm {
     });
   }
 
+  ngOnInit() {
+    this.loginForm.setValue({
+      login: 'yandex@yandex.ru',
+      password: 'qw5!ertasd_#&a4awASипвЬъdw2as'
+    });
+  }
+
   onSubmit() {
     this.loginForm.markAllAsTouched();
+
+    if (!this.loginForm.valid) return;
 
     const loginData: LoginRequest = {
       login: this.loginForm.value.login,
       password: this.loginForm.value.password
     };
 
-    if (this.loginForm.valid) {
-      this.authService.login(loginData).subscribe({
-        next: (response) => {
-          console.log(response);
-          console.log("Успешная авторизация!");
-        },
-        error: (response) => {
-          console.log(response);
-          console.log("Провал авторизации!");
-        }
-      });
-    }
+    this.authService.login(loginData).subscribe({
+      next: () => {
+        this.notificationService.addMessage(new NotificationMessage('Вы вошли в аккаунт'));
+      },
+      error: (response) => {
+        this.notificationService.addMessage(new NotificationMessage(response.error, response.status));
+      }
+    });
   }
 
   goToRegister() {

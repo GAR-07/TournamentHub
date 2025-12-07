@@ -3,15 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7932A40F-D2A2-E38C-F56F-192FFD7BB3EA}|..\\TournamentHub.Application\\TournamentHub.Application.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\tournamenthub\\tournamenthub.api\\tournamenthub.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BD878FC-EDAE-35EB-537B-0D1B61235D5E}|TournamentHub.API\\TournamentHub.API.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\tournamenthub\\tournamenthub.api\\tournamenthub.api\\tournamenthub.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD878FC-EDAE-35EB-537B-0D1B61235D5E}|TournamentHub.API\\TournamentHub.API.csproj|solutionrelative:tournamenthub.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7932A40F-D2A2-E38C-F56F-192FFD7BB3EA}|..\\TournamentHub.Application\\TournamentHub.Application.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\tournamenthub\\tournamenthub.api\\tournamenthub.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3BD878FC-EDAE-35EB-537B-0D1B61235D5E}|TournamentHub.API\\TournamentHub.API.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\tournamenthub\\tournamenthub.api\\tournamenthub.api\\tournamenthub.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD878FC-EDAE-35EB-537B-0D1B61235D5E}|TournamentHub.API\\TournamentHub.API.csproj|solutionrelative:tournamenthub.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DBC1267-7725-4F42-9AC7-2CD9F2F3743F}|..\\TournamentHub.Persistence\\TournamentHub.Persistence.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\tournamenthub\\tournamenthub.api\\tournamenthub.persistence\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7932A40F-D2A2-E38C-F56F-192FFD7BB3EA}|..\\TournamentHub.Application\\TournamentHub.Application.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\tournamenthub\\tournamenthub.api\\tournamenthub.application\\dto\\changepasswordrequest.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,40 +31,67 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.Application\\DTO\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "..\\TournamentHub.Application\\DTO\\ChangePasswordRequest.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.Application\\DTO\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "..\\TournamentHub.Application\\DTO\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T23:18:13.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.API\\TournamentHub.API\\Program.cs",
               "RelativeDocumentMoniker": "TournamentHub.API\\Program.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.API\\TournamentHub.API\\Program.cs",
               "RelativeToolTip": "TournamentHub.API\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwFkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T10:29:40.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.API\\TournamentHub.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "TournamentHub.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.API\\TournamentHub.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "TournamentHub.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T00:24:33.153Z",
+              "WhenOpened": "2025-12-05T10:29:40.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.API\\TournamentHub.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TournamentHub.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.API\\TournamentHub.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TournamentHub.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwC0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:54:05.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.Application\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "..\\TournamentHub.Application\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.Application\\Services\\AuthService.cs",
-              "RelativeToolTip": "..\\TournamentHub.Application\\Services\\AuthService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAuwDEAAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.Application\\Services\\AuthService.cs*",
+              "RelativeToolTip": "..\\TournamentHub.Application\\Services\\AuthService.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwEIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T10:23:41.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.Persistence\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "..\\TournamentHub.Persistence\\Repositories\\AccountRepository.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\source\\repos\\TournamentHub\\TournamentHub.API\\TournamentHub.Persistence\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "..\\TournamentHub.Persistence\\Repositories\\AccountRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T20:24:54.087Z",
               "EditorCaption": ""
             }
           ]

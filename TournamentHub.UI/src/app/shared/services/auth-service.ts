@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { computed, Inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
@@ -7,9 +7,11 @@ import { tap } from 'rxjs';
 import { ACCESS_TOKEN_KEY, REFRESH_TOKEN_KEY } from '../interceptors/token-interceptor';
 import { LoginRequest } from '../models/auth/login-request.model';
 import { RegisterRequest } from '../models/auth/register-request.model';
+import { ChangePasswordRequest } from '../models/auth/сhange-password-request.model';
 
-@Injectable({providedIn: 'root'})
-
+@Injectable({
+  providedIn: 'root',
+})
 export class AuthService {
   private readonly _isAuthenticated = signal<boolean>(false);
 
@@ -17,8 +19,8 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    private jwtHelper: JwtHelperService,
     private router: Router,
+    private jwtHelper: JwtHelperService,
     @Inject(API_URL) private apiUrl: string
   ) { 
     this._isAuthenticated.set(this.hasValidToken());
@@ -50,12 +52,8 @@ export class AuthService {
     this.router.navigate(['/']);
   }
 
-  changePassword(oldPassword: string, newPassword: string) {
-    const params = new HttpParams()
-      .set('Content-Type', 'application/json')
-      .set('oldPassword', oldPassword.toString())
-      .set('newPassword', newPassword.toString());
-    return this.http.post<any>(this.apiUrl + '/Auth/ChangePassword', null, { params });
+  changePassword(request: ChangePasswordRequest) {
+    return this.http.post<any>(this.apiUrl + '/Auth/ChangePassword', request);
   }
 
   getAccountData(): any | null {
